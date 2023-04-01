@@ -8,6 +8,7 @@ import com.johnbryce.web.dto.VehicleDto;
 public interface AppMapper {
     Client map(ClientDto dto);
 
+    ClientDto map(Client client);
 
     Vehicle map(VehicleDto dto);
 
