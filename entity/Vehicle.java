@@ -51,6 +51,10 @@ public class Vehicle {
     @JoinColumn(name = "client_id")
     private Client client;
     @CreationTimestamp
-    
-
+    @Column(updatable = false)
+    private Timestamp creationTimestamp;
+    @UpdateTimestamp
+    private Timestamp updateTimestamp;
+    @Version
+    private Long version;
 }
